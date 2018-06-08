@@ -1,10 +1,18 @@
-package = "lzmq-ffi"
-version = "scm-0"
+-- This file was automatically generated for the LuaDist project.
 
+package = "lzmq-ffi"
+version = "0.4.2-1"
+
+-- LuaDist source
 source = {
-  url = "https://github.com/moteus/lzmq/archive/master.zip",
-  dir = "lzmq-master",
+  tag = "0.4.2-1",
+  url = "git://github.com/LuaDist-testing/lzmq-ffi.git"
 }
+-- Original source
+-- source = {
+--   url = "https://github.com/zeromq/lzmq/archive/v0.4.2.zip",
+--   dir = "lzmq-0.4.2",
+-- }
 
 description = {
   summary = "Lua bindings to ZeroMQ",

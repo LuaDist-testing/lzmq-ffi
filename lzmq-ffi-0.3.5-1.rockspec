@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lzmq-ffi"
-version = "0.3.4-1"
+version = "0.3.5-1"
 
 -- LuaDist source
 source = {
-  tag = "0.3.4-1",
+  tag = "0.3.5-1",
   url = "git://github.com/LuaDist-testing/lzmq-ffi.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/moteus/lzmq/archive/v0.3.4.zip",
---   dir = "lzmq-0.3.4",
+--   url = "https://github.com/moteus/lzmq/archive/v0.3.5.zip",
+--   dir = "lzmq-0.3.5",
 -- }
 
 description = {
@@ -32,17 +32,11 @@ build = {
   type = "builtin",
 
   platforms = {
-    windows = { modules = {
+    linux   = { modules = {
       ["lzmq.timer"] = {
-        defines = {'USE_PERF_COUNT'}
-      }
-    }},
-    unix    = { modules = {
-      ["lzmq.timer"] = {
-        defines = {'USE_CLOCK_MONOTONIC', 'USE_GETTIMEOFDAY'},
         libraries = {"rt"},
-      }
-    }}
+      },
+    }},
   },
 
   modules = {
